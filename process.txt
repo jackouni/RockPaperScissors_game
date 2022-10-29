@@ -1,0 +1,2 @@
+In this folder I will be documenting my process in solving the problem of creating a 
+game of rock paper scissors. 

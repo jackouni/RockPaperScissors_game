@@ -3,22 +3,43 @@
 - computerWin
 - rounds
 - computerSelection
-- computerInput
-- userInput */
+- playerSelection */
+
+const choices = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
-    const choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * choices.length)]
 }
 
-console.log(getComputerChoice());
+let playWin 
 
-/*function playRound(playerSelection, computerSelection) {
-    // your code here!
+
+
+function playRound(playerSelection, computerSelection) {
+    if ((playerSelection === "rock" && computerSelection === "scissors") 
+    || (playerSelection === "scissors" && computerSelection === "paper")
+    || (playerSelection === "paper" && computerSelection === "rock")) {
+        console.log("PlayerWin")
+        return i++
+    }
+    else if ((playerSelection === "rock" && computerSelection === "paper") 
+    || (playerSelection === "scissors" && computerSelection === "rock")
+    || (playerSelection === "paper" && computerSelection === "scissors")) {
+        console.log("ComputerWin")
+        return i++
+    }
+    
+    else if (playerSelection === computerSelection){
+        console.log("Tie")
+        return i
+    }
+    
+
   }
    
-  const playerSelection = "rock";
+  let playerInput = "SCISSORS"
+  const playerSelection = playerInput.toLowerCase();
   const computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
-*/
+
 

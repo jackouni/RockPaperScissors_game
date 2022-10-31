@@ -1,2 +1,34 @@
 In this folder I will be documenting my process in solving the problem of creating a 
 game of rock paper scissors. 
+
+Link to the project: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
+
+Outline (Console Version):
+    1) Create a Git Repo for this project
+
+    2) Create a blank HTML document
+
+    3) Make a function called getComputerChoice() 
+        i) This function will randomly return either Rock, Paper or Scissors
+
+    4) Write a function that plays a single round of RPS - let's call it playRound()
+        i) Takes 2 parameters (playerSelection & computerSelection) 
+        ii) Returns a string that declares the winner and/or loser
+
+    5) Create game() function
+        i) Put the playRound() function inside this function
+        ii) Make it play a best-of-5 game and keep score
+    
+
+The process (Console Version): 
+    * My first step is to ask questions *
+
+        Inputs?
+            - User's selection (prompt(playerSelection))
+
+            - Computer's selection (getComputerChoice() outputs ---> computerSelection)
+
+        Outputs?
+            - Introduction with rules (a simple console.log("...") with a timed delay)
+               
+
